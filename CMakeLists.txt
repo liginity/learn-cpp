@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.18)
 
 project(LearnCpp)
 
+option(USE_LIBCXX "use libc++ as standard library" OFF)
+
 include(cmake/helper.cmake)
 
 # default c++ standard

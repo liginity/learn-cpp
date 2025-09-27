@@ -18,3 +18,12 @@ function(add_single_file_programs single_file_list)
         add_single_file_program(${file_path})
     endforeach()
 endfunction(add_single_file_programs file_paths)
+
+# Use libc++ as standard library.
+# NOTE This has to be a macro.
+macro(use_libcxx)
+    add_compile_options(
+        -stdlib=libc++
+    )
+    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -stdlib=libc++ -lc++abi")    
+endmacro(use_libcxx)
