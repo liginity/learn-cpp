@@ -7,7 +7,7 @@
 // macros for debug
 #define SHOW(...)                                               \
     {                                                           \
-        std::cout << #__VA_ARGS__ " = " << __VA_ARGS__ << "\n"; \
+        std::cout << #__VA_ARGS__ " = " << (__VA_ARGS__) << "\n"; \
     }
 
 inline std::ostream &operator<<(std::ostream &os, const std::vector<int> &vec) {
