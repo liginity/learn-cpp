@@ -20,3 +20,5 @@ add_compile_options(
 add_subdirectory(cpp11)
 add_subdirectory(cpp17)
 add_subdirectory(cpp20)
+
+add_subdirectory(oj-utils)
