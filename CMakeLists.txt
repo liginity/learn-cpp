@@ -16,6 +16,7 @@ add_compile_options(
     -Wextra
 )
 
+include_directories(include)
 
 add_subdirectory(cpp98)
 add_subdirectory(cpp11)
